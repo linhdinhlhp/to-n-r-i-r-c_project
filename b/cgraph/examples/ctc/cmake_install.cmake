@@ -1,4 +1,4 @@
-# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/ctc
+# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/ctc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my/cmake_install.cmake")
+  include("/Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my/cmake_install.cmake")
 
 endif()
 

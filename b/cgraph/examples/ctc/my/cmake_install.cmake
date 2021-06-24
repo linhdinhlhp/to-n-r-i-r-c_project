@@ -1,4 +1,4 @@
-# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/ctc/my
+# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/ctc/my
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

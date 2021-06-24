@@ -37,6 +37,74 @@ void prufer(cgraph_t g, cgraph_ivec_t prufer)
     else
         cgraph_ivec_print(prufer);
 }
+void colorgraph(cgraph_t g)
+{
+    bool adj[g->n][g->n];
+    int color[g->n];
+    int visited[g->n];
+    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
+    {
+        adj[g->from[i]][g->to[i]] = 1;
+        adj[g->to[i]][g->from[i]] = 1;
+    }
+    color[0] = 1;
+    for (int j = 1; j < g->n; j++)
+    {
+        int count_nei = 0;
+        int color_adj[1000];
+        for (int i = 0; i < g->n; i++)
+        {
+            if (adj[i][j] == 1 && color[i] != 0)
+            {
+                color_adj[count_nei] = color[i];
+                count_nei++;
+            }
+        }
+        for (int i = 1; i <= g->n; i++)
+        {
+            visited[i] = 0;
+        }
+        for (int i = 0; i < count_nei; i++)
+        {
+            visited[color_adj[i]] = 1;
+        }
+        for (int i = 1; i <= g->n; i++)
+        {
+            if (visited[i] == 0)
+            {
+                color[j] = i;
+                break;
+            }
+        }
+    }
+    for (int i = 0; i < g->n; i++)
+    {
+        printf("%d %d\n", i, color[i]);
+    }
+    const char *colorlist[] = {"yellow", "red", "blue", "LightSlateGrey", "green", "black", "pink",
+                               "grey", "light steel blue", "DarkGreen", "DarkSeaGreen", "DarkKhaki",
+                               "ivory3", "LightCyan2", "CadetBlue4", "SeaGreen4",
+                               "chartreuse4", "white", "goldenrod3", "gold3", "tan4",
+                               "coral1", "pink4", "blue4", "goldenrod", "LightGreen", "maroon1",
+                               "sgi beet", "SGIMediumGrey", "Crimson", "dark grey", "HotPink", "bisque1"};
+    FILE *fptr1 = fopen("dothitomau.dot", "w");
+    if (fptr1 == NULL)
+    {
+        printf("Error!\n Cannot open file.\n");
+    }
+    fprintf(fptr1, "graph dothi\n{\n");
+    for (int i = 0; i < g->n; i++)
+    {
+        fprintf(fptr1, "%d [fillcolor= %s, style=filled];\n", i, colorlist[color[i]]);
+    }
+    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
+    {
+
+        fprintf(fptr1, "%d -- %d;\n", g->from[i], g->to[i]);
+    }
+    fprintf(fptr1, "}");
+}
+
 int minKey(int key[], bool mstSet[], cgraph_t g)
 {
     int min = INT_MAX;

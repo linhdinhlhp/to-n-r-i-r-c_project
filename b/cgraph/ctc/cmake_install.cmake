@@ -1,4 +1,4 @@
-# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc
+# Install script for directory: /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,29 +39,29 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bkc/ctc" TYPE FILE FILES
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/array.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/common.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/deque.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/hashset.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/hashtable.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/list.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/pqueue.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/queue.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/ring_buffer.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/slist.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/stack.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/treeset.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/treetable.h"
-    "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/tsttable.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/array.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/common.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/deque.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/hashset.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/hashtable.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/list.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/pqueue.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/queue.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/ring_buffer.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/slist.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/stack.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/treeset.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/treetable.h"
+    "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/tsttable.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bkc/ctc/my" TYPE FILE FILES "/Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/ctc/my/hsi.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/bkc/ctc/my" TYPE FILE FILES "/Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/ctc/my/hsi.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc/libcollectc.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc/libcollectc.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcollectc.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcollectc.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcollectc.a")

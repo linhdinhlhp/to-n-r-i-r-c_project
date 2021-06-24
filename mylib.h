@@ -14,6 +14,7 @@ cgraph_t reversegraph(cgraph_t g);
 void print_fathercode(cgraph_t g);
 void find_scc(cgraph_t g);
 void print_dfs(cgraph_t g);
+void colorgraph(cgraph_t g);
 void print_kruskal(cgraph_t g, int parent[], cgraph_ivec_t weights);
 
 #endif

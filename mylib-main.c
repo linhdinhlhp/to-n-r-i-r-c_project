@@ -20,7 +20,7 @@ int main()
         cgraph_ivec_push_back(&edges, v);
     }
     cgraph_t g = cgraph_create(edges, 0, true);
-    int w[] = {9, 24, 6, 2, 18, 6, 11, 30, 20, 14, 15, 44, 16, 19};
+    int w[] = {9, 24, 6, 2, 18, 6, 11, 30, 20, 14, 15, 44, 16, 19, 12, 23, 56, 1, 6, 23, 12, 22, 34, 2, 8, 43, 56, 12, 11, 15, 17, 25};
     cgraph_ivec_t weights = cgraph_ivec_from_array(w, sizeof(w));
     int parent[g->n];
     printf("****** MENU ********\n");
@@ -34,7 +34,8 @@ int main()
     printf("8. Kiểm tra đồ thị có tru trình ?\n");
     printf("9. Sắp topo cho đồ thị\n");
     printf("10. Tìm đường đi ngắn nhất\n");
-    printf("11. Thoát\n");
+    printf("11. Tô màu cho đồ thị\n");
+    printf("12. Thoát\n");
 
     int choice;
     do
@@ -125,9 +126,13 @@ int main()
                 printf("\n");
             }
         }
+        else if (choice == 11)
+        {
+            colorgraph(g);
+        }
         else
             printf("Xin mời chọn lại\n");
-    } while (choice != 11);
+    } while (choice != 12);
     cgraph_ivec_free(&edges);
     cgraph_ivec_free(&weights);
     return 0;

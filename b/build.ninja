@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -46,7 +46,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -58,7 +58,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -85,8 +85,6 @@ build CMakeFiles/mylib.dir/mylib-main.o: C_COMPILER__mylib_ ../mylib-main.c || c
   FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   OBJECT_DIR = CMakeFiles/mylib.dir
   OBJECT_FILE_DIR = CMakeFiles/mylib.dir
-  TARGET_COMPILE_PDB = CMakeFiles/mylib.dir/
-  TARGET_PDB = mylib.pdb
 
 
 # =============================================================================
@@ -102,16 +100,15 @@ build mylib: C_EXECUTABLE_LINKER__mylib_ CMakeFiles/mylib.dir/mylib-main.o | cgr
   OBJECT_DIR = CMakeFiles/mylib.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/mylib.dir/
   TARGET_FILE = mylib
-  TARGET_PDB = mylib.pdb
+  TARGET_PDB = mylib.dbg
 
 
 #############################################
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -123,7 +120,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -135,7 +132,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -146,7 +143,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -155,7 +152,7 @@ build package: phony CMakeFiles/package.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/CMakeLists.txt
 # =============================================================================
 
 
@@ -163,7 +160,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for install/local
 
 build cgraph/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -175,7 +172,7 @@ build cgraph/install/local: phony cgraph/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build cgraph/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -187,7 +184,7 @@ build cgraph/install/strip: phony cgraph/CMakeFiles/install/strip.util
 # Utility command for install
 
 build cgraph/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -205,7 +202,7 @@ build cgraph/list_install_components: phony
 # Utility command for package_source
 
 build cgraph/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -217,7 +214,7 @@ build cgraph/package_source: phony cgraph/CMakeFiles/package_source.util
 # Utility command for rebuild_cache
 
 build cgraph/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -229,7 +226,7 @@ build cgraph/rebuild_cache: phony cgraph/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build cgraph/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -240,7 +237,7 @@ build cgraph/edit_cache: phony cgraph/CMakeFiles/edit_cache.util
 # Utility command for package
 
 build cgraph/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -262,8 +259,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_error.c.o: C_COMPILER__cgraph_Debug ..
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o: C_COMPILER__cgraph_Debug ../cgraph/cgraph_ivec.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o.d
@@ -271,8 +266,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o: C_COMPILER__cgraph_Debug ../
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o: C_COMPILER__cgraph_Debug ../cgraph/type_indexededgelist.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o.d
@@ -280,8 +273,6 @@ build cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o: C_COMPILER__cgraph_
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o: C_COMPILER__cgraph_Debug ../cgraph/structure_generators.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o.d
@@ -289,8 +280,6 @@ build cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o: C_COMPILER__cgraph_
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/visitors.c.o: C_COMPILER__cgraph_Debug ../cgraph/visitors.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/visitors.c.o.d
@@ -298,8 +287,6 @@ build cgraph/CMakeFiles/cgraph.dir/visitors.c.o: C_COMPILER__cgraph_Debug ../cgr
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o: C_COMPILER__cgraph_Debug ../cgraph/cgraph_iqueue.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o.d
@@ -307,8 +294,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o: C_COMPILER__cgraph_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o: C_COMPILER__cgraph_Debug ../cgraph/cgraph_queue.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o.d
@@ -316,8 +301,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o: C_COMPILER__cgraph_Debug ..
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o: C_COMPILER__cgraph_Debug ../cgraph/structural_properties.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o.d
@@ -325,8 +308,6 @@ build cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o: C_COMPILER__cgraph
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o: C_COMPILER__cgraph_Debug ../cgraph/cgraph_istack.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o.d
@@ -334,8 +315,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o: C_COMPILER__cgraph_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o: C_COMPILER__cgraph_Debug ../cgraph/cgraph_rvec.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o.d
@@ -343,8 +322,6 @@ build cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o: C_COMPILER__cgraph_Debug ../
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/heap.c.o: C_COMPILER__cgraph_Debug ../cgraph/heap.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/heap.c.o.d
@@ -352,8 +329,6 @@ build cgraph/CMakeFiles/cgraph.dir/heap.c.o: C_COMPILER__cgraph_Debug ../cgraph/
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 
 # =============================================================================
@@ -369,13 +344,12 @@ build cgraph/libcgraph.a: C_STATIC_LIBRARY_LINKER__cgraph_Debug cgraph/CMakeFile
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
   TARGET_FILE = cgraph/libcgraph.a
-  TARGET_PDB = cgraph/libcgraph.pdb
+  TARGET_PDB = cgraph.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/CMakeLists.txt
 # =============================================================================
 
 
@@ -383,7 +357,7 @@ build cgraph/libcgraph.a: C_STATIC_LIBRARY_LINKER__cgraph_Debug cgraph/CMakeFile
 # Utility command for install/local
 
 build cgraph/examples/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -395,7 +369,7 @@ build cgraph/examples/install/local: phony cgraph/examples/CMakeFiles/install/lo
 # Utility command for install
 
 build cgraph/examples/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -413,7 +387,7 @@ build cgraph/examples/list_install_components: phony
 # Utility command for edit_cache
 
 build cgraph/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -434,8 +408,6 @@ build cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/cgraph_set_er
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/
-  TARGET_PDB = cgraph/examples/cgraph_set_error_handler_demo.pdb
 
 
 # =============================================================================
@@ -451,9 +423,8 @@ build cgraph/examples/cgraph_set_error_handler_demo: C_EXECUTABLE_LINKER__cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/
   TARGET_FILE = cgraph/examples/cgraph_set_error_handler_demo
-  TARGET_PDB = cgraph/examples/cgraph_set_error_handler_demo.pdb
+  TARGET_PDB = cgraph_set_error_handler_demo.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target create_graph_demo
@@ -470,8 +441,6 @@ build cgraph/examples/CMakeFiles/create_graph_demo.dir/create_graph_demo.c.o: C_
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/create_graph_demo.dir/
-  TARGET_PDB = cgraph/examples/create_graph_demo.pdb
 
 
 # =============================================================================
@@ -487,9 +456,8 @@ build cgraph/examples/create_graph_demo: C_EXECUTABLE_LINKER__create_graph_demo_
   OBJECT_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/create_graph_demo.dir/
   TARGET_FILE = cgraph/examples/create_graph_demo
-  TARGET_PDB = cgraph/examples/create_graph_demo.pdb
+  TARGET_PDB = create_graph_demo.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cvector_demo
@@ -506,8 +474,6 @@ build cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o: C_COMPILER__
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cvector_demo.dir/
-  TARGET_PDB = cgraph/examples/cvector_demo.pdb
 
 
 # =============================================================================
@@ -522,9 +488,8 @@ build cgraph/examples/cvector_demo: C_EXECUTABLE_LINKER__cvector_demo_Debug cgra
   OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cvector_demo.dir/
   TARGET_FILE = cgraph/examples/cvector_demo
-  TARGET_PDB = cgraph/examples/cvector_demo.pdb
+  TARGET_PDB = cvector_demo.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cgraph_rvec_t_demo
@@ -541,8 +506,6 @@ build cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/cgraph_rvec_t_demo.c.o: 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/
-  TARGET_PDB = cgraph/examples/cgraph_rvec_t_demo.pdb
 
 
 # =============================================================================
@@ -558,9 +521,8 @@ build cgraph/examples/cgraph_rvec_t_demo: C_EXECUTABLE_LINKER__cgraph_rvec_t_dem
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/
   TARGET_FILE = cgraph/examples/cgraph_rvec_t_demo
-  TARGET_PDB = cgraph/examples/cgraph_rvec_t_demo.pdb
+  TARGET_PDB = cgraph_rvec_t_demo.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target ivec_as_param2
@@ -577,8 +539,6 @@ build cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param2.dir/
-  TARGET_PDB = cgraph/examples/ivec_as_param2.pdb
 
 
 # =============================================================================
@@ -594,16 +554,15 @@ build cgraph/examples/ivec_as_param2: C_EXECUTABLE_LINKER__ivec_as_param2_Debug 
   OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param2.dir/
   TARGET_FILE = cgraph/examples/ivec_as_param2
-  TARGET_PDB = cgraph/examples/ivec_as_param2.pdb
+  TARGET_PDB = ivec_as_param2.dbg
 
 
 #############################################
 # Utility command for install/strip
 
 build cgraph/examples/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -615,7 +574,7 @@ build cgraph/examples/install/strip: phony cgraph/examples/CMakeFiles/install/st
 # Utility command for package
 
 build cgraph/examples/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -637,8 +596,6 @@ build cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param.dir/
-  TARGET_PDB = cgraph/examples/ivec_as_param.pdb
 
 
 # =============================================================================
@@ -654,16 +611,15 @@ build cgraph/examples/ivec_as_param: C_EXECUTABLE_LINKER__ivec_as_param_Debug cg
   OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param.dir/
   TARGET_FILE = cgraph/examples/ivec_as_param
-  TARGET_PDB = cgraph/examples/ivec_as_param.pdb
+  TARGET_PDB = ivec_as_param.dbg
 
 
 #############################################
 # Utility command for rebuild_cache
 
 build cgraph/examples/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -675,7 +631,7 @@ build cgraph/examples/rebuild_cache: phony cgraph/examples/CMakeFiles/rebuild_ca
 # Utility command for package_source
 
 build cgraph/examples/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -697,8 +653,6 @@ build cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o: 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/
-  TARGET_PDB = cgraph/examples/cgraph_ivec_t_demo.pdb
 
 
 # =============================================================================
@@ -714,13 +668,12 @@ build cgraph/examples/cgraph_ivec_t_demo: C_EXECUTABLE_LINKER__cgraph_ivec_t_dem
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/
   TARGET_FILE = cgraph/examples/cgraph_ivec_t_demo
-  TARGET_PDB = cgraph/examples/cgraph_ivec_t_demo.pdb
+  TARGET_PDB = cgraph_ivec_t_demo.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/CMakeLists.txt
 # =============================================================================
 
 
@@ -728,7 +681,7 @@ build cgraph/examples/cgraph_ivec_t_demo: C_EXECUTABLE_LINKER__cgraph_ivec_t_dem
 # Utility command for install/strip
 
 build cgraph/examples/ctc/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -740,7 +693,7 @@ build cgraph/examples/ctc/install/strip: phony cgraph/examples/ctc/CMakeFiles/in
 # Utility command for install
 
 build cgraph/examples/ctc/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -758,7 +711,7 @@ build cgraph/examples/ctc/list_install_components: phony
 # Utility command for package_source
 
 build cgraph/examples/ctc/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -770,7 +723,7 @@ build cgraph/examples/ctc/package_source: phony cgraph/examples/ctc/CMakeFiles/p
 # Utility command for rebuild_cache
 
 build cgraph/examples/ctc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -782,7 +735,7 @@ build cgraph/examples/ctc/rebuild_cache: phony cgraph/examples/ctc/CMakeFiles/re
 # Utility command for edit_cache
 
 build cgraph/examples/ctc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -793,7 +746,7 @@ build cgraph/examples/ctc/edit_cache: phony cgraph/examples/ctc/CMakeFiles/edit_
 # Utility command for package
 
 build cgraph/examples/ctc/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -805,7 +758,7 @@ build cgraph/examples/ctc/package: phony cgraph/examples/ctc/CMakeFiles/package.
 # Utility command for install/local
 
 build cgraph/examples/ctc/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -827,8 +780,6 @@ build cgraph/examples/ctc/CMakeFiles/queue.dir/queue_demo.c.o: C_COMPILER__queue
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/CMakeFiles/queue.dir/
-  TARGET_PDB = cgraph/examples/ctc/queue.pdb
 
 
 # =============================================================================
@@ -844,13 +795,12 @@ build cgraph/examples/ctc/queue: C_EXECUTABLE_LINKER__queue_Debug cgraph/example
   OBJECT_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/CMakeFiles/queue.dir/
   TARGET_FILE = cgraph/examples/ctc/queue
-  TARGET_PDB = cgraph/examples/ctc/queue.pdb
+  TARGET_PDB = queue.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/ctc/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/ctc/CMakeLists.txt
 # =============================================================================
 
 
@@ -858,7 +808,7 @@ build cgraph/examples/ctc/queue: C_EXECUTABLE_LINKER__queue_Debug cgraph/example
 # Utility command for install/local
 
 build cgraph/examples/ctc/my/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/ctc/my/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -876,7 +826,7 @@ build cgraph/examples/ctc/my/list_install_components: phony
 # Utility command for package
 
 build cgraph/examples/ctc/my/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/ctc/my/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -888,7 +838,7 @@ build cgraph/examples/ctc/my/package: phony cgraph/examples/ctc/my/CMakeFiles/pa
 # Utility command for edit_cache
 
 build cgraph/examples/ctc/my/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -899,7 +849,7 @@ build cgraph/examples/ctc/my/edit_cache: phony cgraph/examples/ctc/my/CMakeFiles
 # Utility command for rebuild_cache
 
 build cgraph/examples/ctc/my/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -911,7 +861,7 @@ build cgraph/examples/ctc/my/rebuild_cache: phony cgraph/examples/ctc/my/CMakeFi
 # Utility command for package_source
 
 build cgraph/examples/ctc/my/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -923,7 +873,7 @@ build cgraph/examples/ctc/my/package_source: phony cgraph/examples/ctc/my/CMakeF
 # Utility command for install/strip
 
 build cgraph/examples/ctc/my/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/ctc/my/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -935,7 +885,7 @@ build cgraph/examples/ctc/my/install/strip: phony cgraph/examples/ctc/my/CMakeFi
 # Utility command for install
 
 build cgraph/examples/ctc/my/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/ctc/my/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -957,8 +907,6 @@ build cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/pqueue_demo.c.o: C_COMPILER_
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/
-  TARGET_PDB = cgraph/examples/ctc/my/pq_demo.pdb
 
 
 # =============================================================================
@@ -974,9 +922,8 @@ build cgraph/examples/ctc/my/pq_demo: C_EXECUTABLE_LINKER__pq_demo_Debug cgraph/
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/
   TARGET_FILE = cgraph/examples/ctc/my/pq_demo
-  TARGET_PDB = cgraph/examples/ctc/my/pq_demo.pdb
+  TARGET_PDB = pq_demo.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target hsi_demo
@@ -993,8 +940,6 @@ build cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/hsi_demo.c.o: C_COMPILER__h
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/
-  TARGET_PDB = cgraph/examples/ctc/my/hsi_demo.pdb
 
 
 # =============================================================================
@@ -1010,13 +955,12 @@ build cgraph/examples/ctc/my/hsi_demo: C_EXECUTABLE_LINKER__hsi_demo_Debug cgrap
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/
   TARGET_FILE = cgraph/examples/ctc/my/hsi_demo
-  TARGET_PDB = cgraph/examples/ctc/my/hsi_demo.pdb
+  TARGET_PDB = hsi_demo.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/CMakeLists.txt
 # =============================================================================
 
 
@@ -1024,7 +968,7 @@ build cgraph/examples/ctc/my/hsi_demo: C_EXECUTABLE_LINKER__hsi_demo_Debug cgrap
 # Utility command for install/strip
 
 build cgraph/examples/application/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/application/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1036,7 +980,7 @@ build cgraph/examples/application/install/strip: phony cgraph/examples/applicati
 # Utility command for install
 
 build cgraph/examples/application/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/application/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1054,7 +998,7 @@ build cgraph/examples/application/list_install_components: phony
 # Utility command for package
 
 build cgraph/examples/application/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/application/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1076,8 +1020,6 @@ build cgraph/examples/application/CMakeFiles/task1cc.dir/task1.cc.o: CXX_COMPILE
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
   OBJECT_FILE_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1cc.dir/
-  TARGET_PDB = cgraph/examples/application/task1cc.pdb
 
 
 # =============================================================================
@@ -1093,16 +1035,15 @@ build cgraph/examples/application/task1cc: CXX_EXECUTABLE_LINKER__task1cc_Debug 
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1cc.dir/
   TARGET_FILE = cgraph/examples/application/task1cc
-  TARGET_PDB = cgraph/examples/application/task1cc.pdb
+  TARGET_PDB = task1cc.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build cgraph/examples/application/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1113,7 +1054,7 @@ build cgraph/examples/application/edit_cache: phony cgraph/examples/application/
 # Utility command for rebuild_cache
 
 build cgraph/examples/application/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1125,7 +1066,7 @@ build cgraph/examples/application/rebuild_cache: phony cgraph/examples/applicati
 # Utility command for package_source
 
 build cgraph/examples/application/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1137,7 +1078,7 @@ build cgraph/examples/application/package_source: phony cgraph/examples/applicat
 # Utility command for install/local
 
 build cgraph/examples/application/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/application/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1159,8 +1100,6 @@ build cgraph/examples/application/CMakeFiles/task1c.dir/task1.c.o: C_COMPILER__t
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
   OBJECT_FILE_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1c.dir/
-  TARGET_PDB = cgraph/examples/application/task1c.pdb
 
 
 # =============================================================================
@@ -1176,13 +1115,12 @@ build cgraph/examples/application/task1c: C_EXECUTABLE_LINKER__task1c_Debug cgra
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1c.dir/
   TARGET_FILE = cgraph/examples/application/task1c
-  TARGET_PDB = cgraph/examples/application/task1c.pdb
+  TARGET_PDB = task1c.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/CMakeLists.txt
 # =============================================================================
 
 
@@ -1190,7 +1128,7 @@ build cgraph/examples/application/task1c: C_EXECUTABLE_LINKER__task1c_Debug cgra
 # Utility command for install/local
 
 build cgraph/examples/cgen/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/cgen/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1202,7 +1140,7 @@ build cgraph/examples/cgen/install/local: phony cgraph/examples/cgen/CMakeFiles/
 # Utility command for install/strip
 
 build cgraph/examples/cgen/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/cgen/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1214,7 +1152,7 @@ build cgraph/examples/cgen/install/strip: phony cgraph/examples/cgen/CMakeFiles/
 # Utility command for install
 
 build cgraph/examples/cgen/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/cgen/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1232,7 +1170,7 @@ build cgraph/examples/cgen/list_install_components: phony
 # Utility command for package_source
 
 build cgraph/examples/cgen/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1244,7 +1182,7 @@ build cgraph/examples/cgen/package_source: phony cgraph/examples/cgen/CMakeFiles
 # Utility command for rebuild_cache
 
 build cgraph/examples/cgen/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1256,7 +1194,7 @@ build cgraph/examples/cgen/rebuild_cache: phony cgraph/examples/cgen/CMakeFiles/
 # Utility command for edit_cache
 
 build cgraph/examples/cgen/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1267,7 +1205,7 @@ build cgraph/examples/cgen/edit_cache: phony cgraph/examples/cgen/CMakeFiles/edi
 # Utility command for package
 
 build cgraph/examples/cgen/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/cgen/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1289,8 +1227,6 @@ build cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/vector_of_ivec.c.o: C_C
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
   OBJECT_FILE_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
-  TARGET_COMPILE_PDB = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/
-  TARGET_PDB = cgraph/examples/cgen/vector_of_ivec.pdb
 
 
 # =============================================================================
@@ -1306,13 +1242,12 @@ build cgraph/examples/cgen/vector_of_ivec: C_EXECUTABLE_LINKER__vector_of_ivec_D
   OBJECT_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/
   TARGET_FILE = cgraph/examples/cgen/vector_of_ivec
-  TARGET_PDB = cgraph/examples/cgen/vector_of_ivec.pdb
+  TARGET_PDB = vector_of_ivec.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/examples/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/examples/CMakeLists.txt
 # =============================================================================
 
 
@@ -1320,7 +1255,7 @@ build cgraph/examples/cgen/vector_of_ivec: C_EXECUTABLE_LINKER__vector_of_ivec_D
 # Utility command for install/local
 
 build cgraph/examples/bus/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/bus/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1338,7 +1273,7 @@ build cgraph/examples/bus/list_install_components: phony
 # Utility command for package_source
 
 build cgraph/examples/bus/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1350,7 +1285,7 @@ build cgraph/examples/bus/package_source: phony cgraph/examples/bus/CMakeFiles/p
 # Utility command for rebuild_cache
 
 build cgraph/examples/bus/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1362,7 +1297,7 @@ build cgraph/examples/bus/rebuild_cache: phony cgraph/examples/bus/CMakeFiles/re
 # Utility command for edit_cache
 
 build cgraph/examples/bus/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1373,7 +1308,7 @@ build cgraph/examples/bus/edit_cache: phony cgraph/examples/bus/CMakeFiles/edit_
 # Utility command for package
 
 build cgraph/examples/bus/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/bus/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1385,7 +1320,7 @@ build cgraph/examples/bus/package: phony cgraph/examples/bus/CMakeFiles/package.
 # Utility command for install/strip
 
 build cgraph/examples/bus/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/bus/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1397,7 +1332,7 @@ build cgraph/examples/bus/install/strip: phony cgraph/examples/bus/CMakeFiles/in
 # Utility command for install
 
 build cgraph/examples/bus/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/bus/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1419,8 +1354,6 @@ build cgraph/examples/bus/CMakeFiles/bus.dir/main.c.o: C_COMPILER__bus_Debug ../
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
   OBJECT_FILE_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
-  TARGET_COMPILE_PDB = cgraph/examples/bus/CMakeFiles/bus.dir/
-  TARGET_PDB = cgraph/examples/bus/bus.pdb
 
 build cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o: C_COMPILER__bus_Debug ../cgraph/examples/bus/getline.c || cmake_object_order_depends_target_bus
   DEP_FILE = cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o.d
@@ -1428,8 +1361,6 @@ build cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o: C_COMPILER__bus_Debug 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
   OBJECT_FILE_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
-  TARGET_COMPILE_PDB = cgraph/examples/bus/CMakeFiles/bus.dir/
-  TARGET_PDB = cgraph/examples/bus/bus.pdb
 
 
 # =============================================================================
@@ -1445,13 +1376,12 @@ build cgraph/examples/bus/bus: C_EXECUTABLE_LINKER__bus_Debug cgraph/examples/bu
   OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/bus/CMakeFiles/bus.dir/
   TARGET_FILE = cgraph/examples/bus/bus
-  TARGET_PDB = cgraph/examples/bus/bus.pdb
+  TARGET_PDB = bus.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/linhdinhiutat/Documents/linhcute/Project_trr/cgraph/CMakeLists.txt
+# /Users/linhdinhiutat/Documents/linhcute/project_trr/cgraph/CMakeLists.txt
 # =============================================================================
 
 
@@ -1459,7 +1389,7 @@ build cgraph/examples/bus/bus: C_EXECUTABLE_LINKER__bus_Debug cgraph/examples/bu
 # Utility command for install/strip
 
 build cgraph/ctc/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -1471,7 +1401,7 @@ build cgraph/ctc/install/strip: phony cgraph/ctc/CMakeFiles/install/strip.util
 # Utility command for install
 
 build cgraph/ctc/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -1489,7 +1419,7 @@ build cgraph/ctc/list_install_components: phony
 # Utility command for package_source
 
 build cgraph/ctc/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/CPackSourceConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackSourceConfig.cmake /Users/linhdinhiutat/Documents/linhcute/project_trr/b/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -1501,7 +1431,7 @@ build cgraph/ctc/package_source: phony cgraph/ctc/CMakeFiles/package_source.util
 # Utility command for rebuild_cache
 
 build cgraph/ctc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/Project_trr -B/Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake --regenerate-during-build -S/Users/linhdinhiutat/Documents/linhcute/project_trr -B/Users/linhdinhiutat/Documents/linhcute/project_trr/b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1513,7 +1443,7 @@ build cgraph/ctc/rebuild_cache: phony cgraph/ctc/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build cgraph/ctc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -1524,7 +1454,7 @@ build cgraph/ctc/edit_cache: phony cgraph/ctc/CMakeFiles/edit_cache.util
 # Utility command for package
 
 build cgraph/ctc/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b && /usr/local/Cellar/cmake/3.20.0/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -1536,7 +1466,7 @@ build cgraph/ctc/package: phony cgraph/ctc/CMakeFiles/package.util
 # Utility command for install/local
 
 build cgraph/ctc/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/ctc/all
-  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc && /usr/local/Cellar/cmake/3.20.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -1558,8 +1488,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/array.c.o: C_COMPILER__collectc_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/common.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/common.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/common.c.o.d
@@ -1567,8 +1495,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/common.c.o: C_COMPILER__collectc_Debug 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/deque.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o.d
@@ -1576,8 +1502,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o: C_COMPILER__collectc_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/hashset.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o.d
@@ -1585,8 +1509,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o: C_COMPILER__collectc_Debug
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/hashtable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o.d
@@ -1594,8 +1516,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o: C_COMPILER__collectc_Deb
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/list.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/list.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/list.c.o.d
@@ -1603,8 +1523,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/list.c.o: C_COMPILER__collectc_Debug ..
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/pqueue.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o.d
@@ -1612,8 +1530,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o: C_COMPILER__collectc_Debug 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/queue.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o.d
@@ -1621,8 +1537,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o: C_COMPILER__collectc_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/ring_buffer.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o.d
@@ -1630,8 +1544,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o: C_COMPILER__collectc_D
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/slist.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o.d
@@ -1639,8 +1551,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o: C_COMPILER__collectc_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/stack.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o.d
@@ -1648,8 +1558,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o: C_COMPILER__collectc_Debug .
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/treeset.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o.d
@@ -1657,8 +1565,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o: C_COMPILER__collectc_Debug
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/treetable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o.d
@@ -1666,8 +1572,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o: C_COMPILER__collectc_Deb
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/tsttable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o.d
@@ -1675,8 +1579,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o: C_COMPILER__collectc_Debu
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o: C_COMPILER__collectc_Debug ../cgraph/ctc/my/hsi.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o.d
@@ -1684,8 +1586,6 @@ build cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o: C_COMPILER__collectc_Debug 
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir/my
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 
 # =============================================================================
@@ -1701,9 +1601,8 @@ build cgraph/ctc/libcollectc.a: C_STATIC_LIBRARY_LINKER__collectc_Debug cgraph/c
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
   TARGET_FILE = cgraph/ctc/libcollectc.a
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
+  TARGET_PDB = collectc.a.dbg
 
 # =============================================================================
 # Target aliases.
@@ -1750,63 +1649,63 @@ build vector_of_ivec: phony cgraph/examples/cgen/vector_of_ivec
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b
 
 build all: phony mylib cgraph/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph
 
 build cgraph/all: phony cgraph/libcgraph.a cgraph/examples/all cgraph/ctc/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/ctc
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/ctc
 
 build cgraph/ctc/all: phony cgraph/ctc/libcollectc.a
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples
 
 build cgraph/examples/all: phony cgraph/examples/cgraph_set_error_handler_demo cgraph/examples/create_graph_demo cgraph/examples/cvector_demo cgraph/examples/cgraph_rvec_t_demo cgraph/examples/ivec_as_param2 cgraph/examples/ivec_as_param cgraph/examples/cgraph_ivec_t_demo cgraph/examples/ctc/all cgraph/examples/application/all cgraph/examples/cgen/all cgraph/examples/bus/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/application
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/application
 
 build cgraph/examples/application/all: phony cgraph/examples/application/task1cc cgraph/examples/application/task1c
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/bus
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/bus
 
 build cgraph/examples/bus/all: phony cgraph/examples/bus/bus
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/cgen
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/cgen
 
 build cgraph/examples/cgen/all: phony cgraph/examples/cgen/vector_of_ivec
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc
 
 build cgraph/examples/ctc/all: phony cgraph/examples/ctc/queue cgraph/examples/ctc/my/all
 
 # =============================================================================
 
 #############################################
-# Folder: /Users/linhdinhiutat/Documents/linhcute/Project_trr/b/cgraph/examples/ctc/my
+# Folder: /Users/linhdinhiutat/Documents/linhcute/project_trr/b/cgraph/examples/ctc/my
 
 build cgraph/examples/ctc/my/all: phony cgraph/examples/ctc/my/pq_demo cgraph/examples/ctc/my/hsi_demo
 
@@ -1822,14 +1721,14 @@ build cgraph/examples/ctc/my/all: phony cgraph/examples/ctc/my/pq_demo cgraph/ex
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.20.0/CMakeCCompiler.cmake CMakeFiles/3.20.0/CMakeCXXCompiler.cmake CMakeFiles/3.20.0/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.20.0/CMakeCCompiler.cmake CMakeFiles/3.20.0/CMakeCXXCompiler.cmake CMakeFiles/3.20.0/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.20.0/CMakeCCompiler.cmake CMakeFiles/3.20.0/CMakeCXXCompiler.cmake CMakeFiles/3.20.0/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPack.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/CPackComponent.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Modules/Platform/UnixPaths.cmake /usr/local/Cellar/cmake/3.20.0/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.20.0/CMakeCCompiler.cmake CMakeFiles/3.20.0/CMakeCXXCompiler.cmake CMakeFiles/3.20.0/CMakeSystem.cmake: phony
 
 
 #############################################
