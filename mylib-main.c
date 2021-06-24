@@ -4,7 +4,8 @@ int main()
 {
 
     cgraph_ivec_t edges = cgraph_ivec_create();
-    FILE *fptr;
+    cgraph_ivec_t weights = cgraph_ivec_create();
+    FILE *fptr, *p;
     fptr = fopen("input.txt", "r");
     if (fptr == NULL)
     {
@@ -12,16 +13,21 @@ int main()
     }
     int sodinh, socanh;
     fscanf(fptr, "%d %d\n", &sodinh, &socanh);
+    p = fopen("iputgraph.dot", "w");
+    fprintf(p, "graph dothi\n{\n");
     for (int i = 1; i <= socanh; i++)
     {
-        int u, v;
-        fscanf(fptr, "%d %d\n", &u, &v);
+        int u, v, w;
+        fscanf(fptr, "%d %d %d\n", &u, &v, &w);
+        fprintf(p, "%d -- %d;\n", u, v);
         cgraph_ivec_push_back(&edges, u);
         cgraph_ivec_push_back(&edges, v);
+        cgraph_ivec_push_back(&weights, w);
     }
+    //cgraph_ivec_print(edges);
+    fprintf(p, "}");
+    fclose(p);
     cgraph_t g = cgraph_create(edges, 0, true);
-    int w[] = {9, 24, 6, 2, 18, 6, 11, 30, 20, 14, 15, 44, 16, 19, 12, 23, 56, 1, 6, 23, 12, 22, 34, 2, 8, 43, 56, 12, 11, 15, 17, 25};
-    cgraph_ivec_t weights = cgraph_ivec_from_array(w, sizeof(w));
     int parent[g->n];
     printf("****** MENU ********\n");
     printf("1. In Prufer Code\n");
@@ -44,7 +50,6 @@ int main()
         scanf("%d", &choice);
         if (choice == 1)
         {
-            printf("Prufer code: ");
             cgraph_ivec_t p = cgraph_ivec_create();
             prufer(g, p);
         }
@@ -113,7 +118,7 @@ int main()
             cgraph_ivec_t res = cgraph_ivec_create();
             cgraph_ivec_t resedges = cgraph_ivec_create();
             cgraph_get_shortest_path_dijkstra(g, &res, &resedges, u, v, weights, CGRAPH_OUT);
-            if (cgraph_ivec_size(res) == 0)
+            if (cgraph_ivec_size(res) < 2)
             {
                 printf("Không có đường đi\n");
             }

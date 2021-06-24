@@ -1,7 +1,18 @@
 void prufer(cgraph_t g, cgraph_ivec_t prufer)
 {
     int sz[g->n];
+    for (int i = 0; i < g->n; i++)
+    {
+        sz[i] = 0;
+    }
     bool adj[g->n][g->n];
+    for (int i = 0; i < g->n; i++)
+    {
+        for (int j = 0; j < g->n; j++)
+        {
+            adj[i][j] = 0;
+        }
+    }
     for (int i = 0; i < cgraph_ivec_size(g->from); i++)
     {
         sz[g->from[i]]++;
@@ -9,13 +20,13 @@ void prufer(cgraph_t g, cgraph_ivec_t prufer)
         adj[g->from[i]][g->to[i]] = 1;
         adj[g->to[i]][g->from[i]] = 1;
     }
-    for (int j = 0; j < g->n - 1; j++)
+    for (int j = 1; j < g->n - 1; j++)
     {
         for (int i = 1; i <= g->n; i++)
         {
             if (sz[i] == 1)
             {
-                for (int v = 1; v < g->n; v++)
+                for (int v = 0; v < g->n; v++)
                 {
                     if (adj[i][v])
                     {
@@ -30,106 +41,14 @@ void prufer(cgraph_t g, cgraph_ivec_t prufer)
             }
         }
     }
-    if (cgraph_ivec_size(prufer) == 0)
+    if (cgraph_ivec_size(prufer) < cgraph_ivec_size(g->from) - 1)
     {
-        printf("Khong phai la cay\n");
+        printf("Không phải là cây !\n");
     }
     else
+    {
+        printf("Prufer code: ");
         cgraph_ivec_print(prufer);
-}
-void colorgraph(cgraph_t g)
-{
-    bool adj[g->n][g->n];
-    int color[g->n];
-    int visited[g->n];
-    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
-    {
-        adj[g->from[i]][g->to[i]] = 1;
-        adj[g->to[i]][g->from[i]] = 1;
-    }
-    color[0] = 1;
-    for (int j = 1; j < g->n; j++)
-    {
-        int count_nei = 0;
-        int color_adj[1000];
-        for (int i = 0; i < g->n; i++)
-        {
-            if (adj[i][j] == 1 && color[i] != 0)
-            {
-                color_adj[count_nei] = color[i];
-                count_nei++;
-            }
-        }
-        for (int i = 1; i <= g->n; i++)
-        {
-            visited[i] = 0;
-        }
-        for (int i = 0; i < count_nei; i++)
-        {
-            visited[color_adj[i]] = 1;
-        }
-        for (int i = 1; i <= g->n; i++)
-        {
-            if (visited[i] == 0)
-            {
-                color[j] = i;
-                break;
-            }
-        }
-    }
-    for (int i = 0; i < g->n; i++)
-    {
-        printf("%d %d\n", i, color[i]);
-    }
-    const char *colorlist[] = {"yellow", "red", "blue", "LightSlateGrey", "green", "black", "pink",
-                               "grey", "light steel blue", "DarkGreen", "DarkSeaGreen", "DarkKhaki",
-                               "ivory3", "LightCyan2", "CadetBlue4", "SeaGreen4",
-                               "chartreuse4", "white", "goldenrod3", "gold3", "tan4",
-                               "coral1", "pink4", "blue4", "goldenrod", "LightGreen", "maroon1",
-                               "sgi beet", "SGIMediumGrey", "Crimson", "dark grey", "HotPink", "bisque1"};
-    FILE *fptr1 = fopen("dothitomau.dot", "w");
-    if (fptr1 == NULL)
-    {
-        printf("Error!\n Cannot open file.\n");
-    }
-    fprintf(fptr1, "graph dothi\n{\n");
-    for (int i = 0; i < g->n; i++)
-    {
-        fprintf(fptr1, "%d [fillcolor= %s, style=filled];\n", i, colorlist[color[i]]);
-    }
-    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
-    {
-
-        fprintf(fptr1, "%d -- %d;\n", g->from[i], g->to[i]);
-    }
-    fprintf(fptr1, "}");
-}
-
-int minKey(int key[], bool mstSet[], cgraph_t g)
-{
-    int min = INT_MAX;
-    int minkey;
-    for (int v = 0; v < g->n; v++)
-        if (mstSet[v] == false && key[v] < min)
-            min = key[v], minkey = v;
-    return minkey;
-}
-void restructgraph(cgraph_t g, cgraph_ivec_t weights, int graph[g->n][g->n])
-{
-    for (int i = 0; i < g->n; i++)
-    {
-        for (int j = i; j < g->n; j++)
-        {
-            graph[g->from[i]][g->to[i]] = weights[i];
-            graph[g->to[i]][g->from[i]] = weights[i];
-            graph[i][j] = 0;
-            graph[j][i] = 0;
-        }
-    }
-    for (int i = 0; i < cgraph_ivec_size(g->from); i++) //tranform graph
-    {
-        graph[g->from[i]][g->to[i]] = weights[i];
-        graph[g->to[i]][g->from[i]] = weights[i];
     }
 }
 
@@ -161,6 +80,32 @@ void print_bfs(cgraph_t g, int u)
     }
     printf("\n");
 }
+int minKey(int key[], bool mstSet[], cgraph_t g)
+{
+    int min = INT_MAX;
+    int minkey;
+    for (int v = 0; v < g->n; v++)
+        if (mstSet[v] == false && key[v] < min)
+            min = key[v], minkey = v;
+    return minkey;
+}
+void restructgraph(cgraph_t g, cgraph_ivec_t weights, int graph[g->n][g->n])
+{
+    for (int i = 0; i < g->n; i++)
+    {
+        for (int j = i; j < g->n; j++)
+        {
+            graph[i][j] = 0;
+            graph[j][i] = 0;
+        }
+    }
+    for (int i = 0; i < cgraph_ivec_size(g->from); i++) //tranform graph
+    {
+        graph[g->from[i]][g->to[i]] = weights[i];
+        graph[g->to[i]][g->from[i]] = weights[i];
+    }
+}
+
 cgraph_t find_mst(cgraph_t g, cgraph_ivec_t weights)
 {
     int graph[g->n][g->n];
@@ -189,13 +134,22 @@ cgraph_t find_mst(cgraph_t g, cgraph_ivec_t weights)
     }
     cgraph_ivec_t mst = cgraph_ivec_create();
     printf("Edge \tWeight\n");
+    FILE *fptr1 = fopen("primmst.dot", "w");
+    if (fptr1 == NULL)
+    {
+        printf("Error!\n Cannot open file.\n");
+    }
+    fprintf(fptr1, "graph mst\n{\n");
     for (int i = 1; i < g->n; i++)
     {
+        fprintf(fptr1, "%d -- %d;\n", parent[i], i);
         cgraph_ivec_push_back(&mst, parent[i]);
         cgraph_ivec_push_back(&mst, i);
         mincost += graph[i][parent[i]];
-        printf("%d - %d \t%d \n", parent[i], i, graph[i][parent[i]]);
+        printf("%d - %d\t%d\n", parent[i], i, graph[i][parent[i]]);
     }
+    fprintf(fptr1, "}");
+    fclose(fptr1);
     printf("Minimum cost: %d\n", mincost);
     cgraph_t MST = cgraph_create(mst, 0, true);
     return MST;
@@ -235,8 +189,11 @@ void find_scc(cgraph_t g)
                   dist = cgraph_ivec_create();
     cgraph_dfs(gr, 0, CGRAPH_OUT, true, &order, &order_out, &father, &dist);
     int sz = cgraph_ivec_size(order_out);
-    int visited[g->n];
-    memset(visited, false, g->n);
+    bool visited[g->n];
+    for (int i = 0; i < g->n; i++)
+    {
+        visited[i] = false;
+    }
     int cc = 0;
     for (int i = sz - 1; i >= 0; i--)
     {
@@ -265,12 +222,21 @@ void find_scc(cgraph_t g)
 void printMST(int a[], int b[], int weight[], cgraph_t g)
 {
     int mincost = 0;
+    FILE *fptr1 = fopen("kruskalmst.dot", "w");
+    if (fptr1 == NULL)
+    {
+        printf("Error!\n Cannot open file.\n");
+    }
+    fprintf(fptr1, "graph mst\n{\n");
     printf("Edge \tWeight\n");
     for (int i = 0; i < g->n - 1; i++)
     {
+        fprintf(fptr1, "%d -- %d;\n", a[i], b[i]);
         printf("%d - %d\t%d\n", a[i], b[i], weight[i]);
         mincost = mincost + weight[i];
     }
+    fprintf(fptr1, "}");
+    fclose(fptr1);
     printf("Mincost = %d\n", mincost);
 }
 
@@ -350,4 +316,83 @@ void print_kruskal(cgraph_t g, int parent[], cgraph_ivec_t weights)
     }
 
     printMST(a, b, weight, g);
+}
+void colorgraph(cgraph_t g)
+{
+    bool adj[g->n][g->n];
+    for (int i = 0; i < g->n; i++)
+    {
+        for (int j = 0; j < g->n; j++)
+        {
+            adj[i][j] = 0;
+        }
+    }
+    int color[g->n];
+    for (int i = 0; i < g->n; i++)
+    {
+        color[i] = 0;
+    }
+    int visited[g->n];
+    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
+    {
+        adj[g->from[i]][g->to[i]] = 1;
+        adj[g->to[i]][g->from[i]] = 1;
+    }
+    color[0] = 1;
+    for (int j = 1; j < g->n; j++)
+    {
+        int count_nei = 0;
+        int color_adj[1000];
+        for (int i = 0; i < g->n; i++)
+        {
+            if (adj[i][j] == 1 && color[i] != 0)
+            {
+                color_adj[count_nei] = color[i];
+                count_nei++;
+            }
+        }
+        for (int i = 1; i <= g->n; i++)
+        {
+            visited[i] = 0;
+        }
+        for (int i = 0; i < count_nei; i++)
+        {
+            visited[color_adj[i]] = 1;
+        }
+        for (int i = 1; i <= g->n; i++)
+        {
+            if (visited[i] == 0)
+            {
+                color[j] = i;
+                break;
+            }
+        }
+    }
+    for (int i = 0; i < g->n; i++)
+    {
+        printf("%d %d\n", i, color[i]);
+    }
+    const char *colorlist[] = {"yellow", "red", "blue", "LightSlateGrey", "green", "black", "pink",
+                               "grey", "light steel blue", "DarkGreen", "DarkSeaGreen", "DarkKhaki",
+                               "ivory3", "LightCyan2", "CadetBlue4", "SeaGreen4",
+                               "chartreuse4", "white", "goldenrod3", "gold3", "tan4",
+                               "coral1", "pink4", "blue4", "goldenrod", "LightGreen", "maroon1",
+                               "sgi beet", "SGIMediumGrey", "Crimson", "dark grey", "HotPink", "bisque1"};
+    FILE *fptr1 = fopen("dothitomau.dot", "w");
+    if (fptr1 == NULL)
+    {
+        printf("Error!\n Cannot open file.\n");
+    }
+    fprintf(fptr1, "graph dothi\n{\n");
+    for (int i = 0; i < g->n; i++)
+    {
+        fprintf(fptr1, "%d [fillcolor= %s, style=filled];\n", i, colorlist[color[i]]);
+    }
+    for (int i = 0; i < cgraph_ivec_size(g->from); i++)
+    {
+
+        fprintf(fptr1, "%d -- %d;\n", g->from[i], g->to[i]);
+    }
+    fprintf(fptr1, "}");
+    fclose(fptr1);
 }
